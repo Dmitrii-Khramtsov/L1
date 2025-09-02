@@ -46,6 +46,8 @@ func main() {
 	for i := range 10 {
 		if val, ok := sm.Get(fmt.Sprintf("key_%d", i)); ok {
 			fmt.Println(val)
+		} else {
+			fmt.Printf("key key_%d not found", i)
 		}
 	}
 }
