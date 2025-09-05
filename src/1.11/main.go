@@ -16,7 +16,7 @@ func inerJoin(x, y []int) []int {
 		max = x
 	}
 
-	m := make(map[int]interface{})
+	m := make(map[int]struct{})
 	for _, v := range min {
 		m[v] = struct{}{}
 	}
